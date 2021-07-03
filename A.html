@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        body>div {
+            margin: auto;
+
+        }
+
+        p {
+            background: #CCC;
+            padding: 10px;
+        }
+
+        .card a.link-primary {
+            font-weight: bold;
+            color: black;
+            font-size: 16px;
+            display: block;
+            font-style: italic;
+            margin: 14px 0 0 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card text-center" style="width: 18rem;">
+        <img class="card-img-top" src="https://placehold.it/500/0087fd/333" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+                $forum[threadcount]
+            </p>
+            <p class="card-text">
+                $forum[replycount]
+            </p>
+            <p class="card-text">
+                $forum[browsers]
+            </p>
+            <p class="card-text">
+                $forum[description]
+            </p>
+
+            <a href="#" class="btn btn-primary">($vbphrase[x_viewing])</a>
+            <a href="#"
+                class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+            <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+        </div>
+    </div>
+</body>
+
+</html>
