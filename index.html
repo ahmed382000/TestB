@@ -11,12 +11,16 @@
             height: 2000px;
         }
 
-        body>div {
-            margin: auto;
-
+        .UP {
+            padding: 20px;
         }
 
-        p {
+        .card {
+            margin: auto;
+            border: 1px solid #007bff;
+        }
+
+        .card-text {
             background: #CCC;
             padding: 10px;
         }
@@ -34,29 +38,199 @@
 </head>
 
 <body>
-    <div class="card text-center" style="width: 18rem;">
-        <img class="card-img-top" src="https://placehold.it/500/0087fd/333" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">$forum[title]</h5>
-            <p class="card-text">
-                $forum[threadcount]
-            </p>
-            <p class="card-text">
-                $forum[replycount]
-            </p>
-            <p class="card-text">
-                $forum[browsers]
-            </p>
-            <p class="card-text">
-                $forum[description]
-            </p>
-
-            <a href="#" class="btn btn-primary">($vbphrase[x_viewing])</a>
-            <a href="#"
-                class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
-            <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+    <div class="row">
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
         </div>
+
+
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <div class="row">
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" UP col-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="images/forumhome/$forum[forumid].png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> <a href="forumdisplay.php?$session[sessionurl]f=$forum[forumid]"
+                            name="$foruminfo[title]" name="$foruminfo[title]">
+                            $forum[title]</a> </h5>
+                    <p class="card-text"> $forum[threadcount] </p>
+                    <p class="card-text"> $forum[replycount] </p>
+                    <p class="card-text"> $forum[browsers] </p>
+                    <p class="card-text"> $forum[description] </p>
+                    <a href="subscription.php?$session[sessionurl]do=removesubscription&amp;f=$forum[forumid]"
+                        class="btn btn-primary">$vbphrase[x_viewing]</a>
+                    <a href="#"
+                        class="link-primary">subscription.php?$session[sessionurl]do=removesubscription&f=$forum[forumid]</a>
+                    <a href="#" class="link-primary">$vbphrase[subforums]: $forum[subforums]</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
